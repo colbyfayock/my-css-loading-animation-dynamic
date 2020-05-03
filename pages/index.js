@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [loadingState, updateLoadingState] = useState(true);
-  const [contentState, updateContentState] = useState({})
+  const [contentState, updateContentState] = useState({
+    header: 'Loading',
+    intro: 'Loading',
+    list: [
+      'Loading',
+      'Loading',
+      'Loading'
+    ]
+  })
   const content = {
     header: `So, how 'bout them Knicks?`,
     intro: `What are their names? I'm Santa Claus! This opera's as lousy as it is brilliant! Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! Good news, everyone! I've taught the toaster to feel love!`,
@@ -20,20 +28,22 @@ export default function Home() {
   }, [])
   return (
     <div className="container">
-      <main>
+      <main className={loadingState ? 'loading' : ''}>
         <h1>{ contentState.header }</h1>
         <p>{ contentState.intro }</p>
         <ul>
           { Array.isArray(contentState.list) && contentState.list.map((item, i) => {
             return (
-              <li>{ item }</li>
+              <li key={i}>{ item }</li>
             )
           })}
         </ul>
       </main>
 
       <style jsx>{`
-        .loading {
+        .loading h1,
+        .loading p,
+        .loading li {
           color: transparent;
           background: linear-gradient(100deg, #eceff1 30%, #f6f7f8 50%, #eceff1 70%);
           background-size: 400%;
