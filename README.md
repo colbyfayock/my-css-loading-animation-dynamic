@@ -1,12 +1,17 @@
-# Pure CSS Loading Animation Demo
+# Pure CSS Loading Animation in React
 
-Learn how to create your own with [How to Create a CSS Only Loading Animation](https://www.youtube.com/watch?v=auyZWWjXJCo)
+Demo for tutorial [How to Use Pure CSS to Create a Beautiful Loading Animation for your App](https://www.youtube.com/watch?v=auyZWWjXJCo)
 
-## Getting started locally
-* `yarn install`
-* `yarn develop`
-* 🚀
+🚀 See Demo: https://my-css-loading-animation-dynamic.now.sh/
+
+📝 Article: https://www.freecodecamp.org/news/how-to-use-css-to-create-a-beautiful-loading-animation-for-your-app/
+
+📺 YouTube: https://www.youtube.com/watch?v=auyZWWjXJCo
 
 ## More tutorials and walkthroughs
-* [Follow me on Twitter](https://twitter.com/colbyfayock)
-* [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
+
+📺 [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+✉️ [Sign Up for My Newsletter](https://colbyfayock.com/newsletter)
